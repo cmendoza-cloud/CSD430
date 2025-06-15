@@ -1,0 +1,43 @@
+<!-- Carmen Mendoza-->
+<!-- CSD430 --> 
+ <!-- Create a form to gather data from a user. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Feedback Form</title>
+</head>
+<body>
+    <h1>Restaurant Experience Feedback</h1>
+    <p>Please fill out the following form to provide feedback on your recent dining experience.</p>
+    
+    <form action="feedback_display.jsp" method="post">
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label>Was your meal enjoyable?</label><br>
+        <input type="radio" id="yes" name="mealEnjoyable" value="Yes" required>
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="mealEnjoyable" value="No">
+        <label for="no">No</label><br><br>
+
+        <label for="rating">Overall Rating:</label><br>
+        <select id="rating" name="rating" required>
+            <option value="">Select a rating</option>
+            <option value="1 - Poor">1 - Poor</option>
+            <option value="2 - Fair">2 - Fair</option>
+            <option value="3 - Good">3 - Good</option>
+            <option value="4 - Very Good">4 - Very Good</option>
+            <option value="5 - Excellent">5 - Excellent</option>
+        </select><br><br>
+
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <label for="visitDate">Date of Visit:</label><br>
+        <input type="date" id="visitDate" name="visitDate" required><br><br>
+
+        <input type="submit" value="Submit Feedback">
+    </form>
+</body>
+</html>
