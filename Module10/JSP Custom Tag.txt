@@ -1,0 +1,3 @@
+<%--  Carmen Mendoza, CSD380, Module 10 --%>
+<%@ taglib uri="http://example.com/mytags" prefix="custom" %>
+<custom:showDate format="MM/dd/yyyy" />
