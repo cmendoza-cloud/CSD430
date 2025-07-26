@@ -1,0 +1,14 @@
+<!-- Carmen Mendoza, CSD380, Module 10 -->
+<my-alert message="This is a test alert!"></my-alert>
+
+<script>
+  //  Carmen Mendoza, CSD380, Module 10
+  class MyAlert extends HTMLElement {
+    connectedCallback() {
+      const msg = this.getAttribute("message");
+      this.innerHTML = `<div class="alert-box">${msg}</div>`;
+    }
+  }
+
+  customElements.define("my-alert", MyAlert);
+</script>
